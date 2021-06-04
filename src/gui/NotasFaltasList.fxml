@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="388.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NotasFaltasListController">
+   <children>
+      <Label text="Registro de Notas e Faltas">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="New" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewNotasFaltas" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="Matricula" />
+          <TableColumn fx:id="tableColumnBaseNotaSalaAulaB1" prefWidth="83.0" text=" Sala Aula B1" />
+            <TableColumn fx:id="tableColumnBaseNotaTarefasB1" prefWidth="87.0" text="Tarefas B1" />
+            <TableColumn fx:id="tableColumnBaseNotaTrabalhoB1" prefWidth="91.0" text="Trabalho B1" />
+            <TableColumn fx:id="tableColumnBaseNotaProvaB1" prefWidth="73.0" text="Prova B1" />
+            <TableColumn fx:id="tableColumnBaseNotaSalaAulaB2" prefWidth="83.0" text=" Sala Aula B2" />
+            <TableColumn fx:id="tableColumnBaseNotaTarefasB2" prefWidth="87.0" text="Tarefas B2" />
+            <TableColumn fx:id="tableColumnBaseNotaTrabalhoB2" prefWidth="91.0" text="Trabalho B2" />
+            <TableColumn fx:id="tableColumnBaseNotaProvaB2" prefWidth="73.0" text="Prova B2" />
+            <TableColumn fx:id="tableColumnBaseNotaSalaAulaB3" prefWidth="83.0" text=" Sala Aula B3" />
+            <TableColumn fx:id="tableColumnBaseNotaTarefasB3" prefWidth="87.0" text="Tarefas B3" />
+            <TableColumn fx:id="tableColumnBaseNotaTrabalhoB3" prefWidth="91.0" text="Trabalho B3" />
+            <TableColumn fx:id="tableColumnBaseNotaProvaB3" prefWidth="73.0" text="Prova B3" />
+            <TableColumn fx:id="tableColumnBaseNotaSalaAulaB4" prefWidth="83.0" text=" Sala Aula B4" />
+            <TableColumn fx:id="tableColumnBaseNotaTarefasB4" prefWidth="87.0" text="Tarefas B4" />
+            <TableColumn fx:id="tableColumnBaseNotaTrabalhoB4" prefWidth="91.0" text="Trabalho B4" />
+            <TableColumn fx:id="tableColumnBaseNotaProvaB4" prefWidth="73.0" text="Prova B4" />
+            <TableColumn fx:id="tableColumnFaltasB1" prefWidth="70.0" text="Faltas B1" />
+            <TableColumn fx:id="tableColumnFaltasB2" prefWidth="75.0" text="Faltas B2" />
+            <TableColumn fx:id="tableColumnFaltasB3" prefWidth="75.0" text="Faltas B3" />
+            <TableColumn fx:id="tableColumnFaltasB4" prefWidth="75.0" text="Faltas B4" />
+            <TableColumn fx:id="tableColumnTotalFaltas" prefWidth="75.0" text="Total Faltas" />
+            <TableColumn fx:id="tableColumnSituacaoAluno" prefWidth="100.0" text="Situaçao" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="75.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
